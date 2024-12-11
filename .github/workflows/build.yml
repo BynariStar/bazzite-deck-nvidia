@@ -94,7 +94,7 @@ jobs:
           if [[ "${{ matrix.base_name }}" == "bazzite-deck" ]]; then
               if [[ "${{ matrix.target_image_flavor }}" == "asus" ]]; then
                   echo "IMAGE_NAME=${{ format('{0}{1}', 'bazzite-ally', '${DESKTOP}') }}" >> $GITHUB_ENV
-              elseif [[ "${{ matrix.target_image_flavor }}" == "main" ]]; then
+              elif [[ "${{ matrix.target_image_flavor }}" == "main" ]]; then
                   echo "IMAGE_NAME=${{ format('{0}{1}', 'bazzite-deck', '${DESKTOP}') }}" >> $GITHUB_ENV
               else
                   echo "IMAGE_NAME=${{ format('{0}{1}-{2}', 'bazzite', '${DESKTOP}', env.IMAGE_FLAVOR) }}" >> $GITHUB_ENV
