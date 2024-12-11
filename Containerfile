@@ -953,7 +953,7 @@ RUN /usr/libexec/containerbuild/image-info && \
 
 FROM ghcr.io/ublue-os/akmods-${NVIDIA_FLAVOR}:${KERNEL_FLAVOR}-${FEDORA_MAJOR_VERSION}-${KERNEL_VERSION} AS nvidia-akmods
 
-FROM bazzite AS bazzite-nvidia
+FROM bazzite-deck AS bazzite-deck-nvidia
 
 ARG IMAGE_NAME="${IMAGE_NAME:-bazzite-nvidia}"
 ARG IMAGE_VENDOR="${IMAGE_VENDOR:-ublue-os}"
