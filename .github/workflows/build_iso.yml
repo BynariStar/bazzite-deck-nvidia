@@ -69,7 +69,7 @@ jobs:
         id: registry_case
         uses: ASzc/change-string-case-action@v6
         with:
-          string: ${{ env.PUSH_IMAGE_REGISTRY }}
+          string: ${{ env.IMAGE_REGISTRY }}
 
       - name: Determine Flatpak Dependencies
         id: flatpak_dependencies
